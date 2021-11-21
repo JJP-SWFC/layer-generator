@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Layer Generator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <title> Mad Libs Generator </title>
+</head>
+
+<body>
+  <div id="madlib-generator">
+    <h1> Madlibs Generator</h1>
+    <form id="madlibs-form" onsubmit="return generate(event)">
+      <div class="row">
+        <input type="text" name="layername" placeholder="Console Layer Name" />
+      </div>
+	  <div class="row">
+        <input type="text" name="oflayername" placeholder="Official Layer Name" />
+      </div>
+  <button class="btn">Generate Story</button>
+  </form>
+  <article id="output"></article>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://wzrd.herokuapp.com/standalone/form-serialize'></script><script  src="./script.js"></script>
+
+</body>
+</html>
