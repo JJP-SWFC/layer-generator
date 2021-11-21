@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Layer Generator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <title>JJP's Layer Generator </title>
+</head>
+
+<body>
+  <div id="layer-generator">
+    <h1> JJP's Layer Generator</h1>
+    <form id="layer-form" onsubmit="return generate(event)">
+      <div class="row">
+        <input type="text" name="layername" placeholder="Console Layer Name" />
+      </div>
+	  <div class="row">
+        <input type="text" name="oflayername" placeholder="Official Layer Name" />
+      </div>
+	  <div class="row">
+        <input type="text" name="symbol" placeholder="Layer Symbol" />
+      </div>
+	  <div class="row">
+		<label>Unlocked to start?
+			<select id="unlocked">
+				<option value = "true">true</option>
+				<option value = "false">false</option>
+			</select>
+		</label>
+	  </div>
+	  <div class="row">
+        <input type="text" name="startpoints" placeholder="Starting points" />
+      </div>
+	  <div class="row">
+        <input type="text" name="lcolor" placeholder="Layer color (hex value)" />
+      </div>
+	  <div class="row">
+        <input type="text" name="requires" placeholder="How much is required for 1 point?" />
+      </div>
+	  <div class="row">
+        <input type="text" name="resource" placeholder="Name of the prestige currency" />
+      </div>
+	  <div class="row">
+        <input type="text" name="baseresource" placeholder="Name of resource prestige is based on" />
+      </div>
+	  <div class="row">
+		<label>Layer type: 
+			<select id="type">
+				<option value = "normal">cost depends on amount gained</option>
+				<option value = "static">cost depends on how much you have</option>
+			</select>
+		</label>
+	  </div>
+	  <div class="row">
+        <input type="text" name="exponent" placeholder="Prestige currency exponent" />
+      </div>
+	  <div class="row">
+        <input type="text" name="layerrow" placeholder="Row" />
+      </div>
+	  <div class="row">
+		<label>Layer shown by default? 
+			<select id="layershown">
+				<option value = "true">true</option>
+				<option value = "false">false</option>
+			</select>
+		</label>
+	  </div>
+	  <div class="row">
+		<label>Upgrades enabled? 
+			<select id="upgrades">
+				<option value = "true">true</option>
+				<option value = "false">false</option>
+			</select>
+		</label>
+	  </div>
+	  <div class="row">
+		<label>Milestones enabled? 
+			<select id="milestones">
+				<option value = "true">true</option>
+				<option value = "false">false</option>
+			</select>
+		</label>
+	  </div>
+  <button class="btn">Generate Layer</button>
+  </form>
+  <article id="output"></article>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://wzrd.herokuapp.com/standalone/form-serialize'></script><script  src="./script.js"></script>
+
+</body>
+</html>
